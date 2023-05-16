@@ -1,4 +1,4 @@
-![Demmo Image](/demo.png)
+![Demmo Image](/demo-min.png)
 # Community Landing Page (HTML/CSS)
 
 Welcome to the Community Landing Page repository! This project showcases a visually appealing and responsive landing page created using HTML and CSS. 
