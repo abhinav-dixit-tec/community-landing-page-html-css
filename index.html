@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav ul li {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#banner img {
+  width: 100%;
+}
+
+#banner {
+  position: relative;
+}
+
+#banner img {
+  width: 100%;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to set the transparency level */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner-text h1 {
+  font-size: 2em; /* Adjust the font size relative to the header */
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 1.2em; /* Adjust the font size relative to the header */
+  margin-bottom: 20px;
+}
+
+.banner-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+margin-bottom: 10px;
+}
+
+.content {
+background-color: #fff;
+padding: 15px;
+margin-bottom: 20px;
+border-radius: 5px;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Featured</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <img src="banner.jpg" alt="Community Banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-text">
+      <h1>Welcome to our Community</h1>
+      <p>Join us and be a part of something amazing.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <main style="background-image: url(bg.jpg)">
+    <section id="featured">
+        <h2>Featured Content</h2>
+        <!-- Add your featured content here -->
+        <div class="content">
+        <h3>Article Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lorem lacus.</p>
+        </div>
+        <div class="content">
+        <h3>Article Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lorem lacus.</p>
+        </div>
+    </section>
+
+    <section id="updates">
+        <h2>Recent Updates</h2>
+        <!-- Add your recent updates here -->
+        <div class="content">
+        <h3>Update Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lorem lacus.</p>
+        </div>
+        <div class="content">
+        <h3>Update Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lorem lacus.</p>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <!-- Add your upcoming events here -->
+        <div class="content">
+        <h3>Event Title</h3>
+        <p>Date: May 20, 2023</p>
+        <p>Location: Event Venue</p>
+        </div>
+        <div class="content">
+        <h3>Event Title</h3>
+        <p>Date: May 25, 2023</p>
+        <p>Location: Event Venue</p>
+        </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 made by Abhinav Dixit</p>
+  </footer>
+</body>
+</html>
